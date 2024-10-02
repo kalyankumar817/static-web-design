@@ -1,0 +1,161 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.nav-bar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border:2px solid black;
+    align-items: center;
+    height:auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.test-purpose{
+    display: flex;
+}
+.person{
+    background-color: transparent;
+    border:none;
+    margin-left: 10px;
+}
+.person-text-btn{
+    background-color: transparent;
+    border:none;
+    margin-left: 10px;
+}
+.page-options a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.contact-website{
+    display: flex;
+}
+.message{
+    margin-right: 10px;
+}
+.preview-btn{
+    margin-right: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;   /* for larger screens */
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+.box-1{
+    border:2px solid black;
+    margin-top: 10px;
+}
+.box-2{
+    border:2px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+
+.banner{
+    border:2px solid black;
+    margin: 10px;
+    height:200px;
+    background: linear-gradient(rgba(105, 171, 215, 0.8),rgba(20, 188, 235, 0.8)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9L0tZrdVLJpudCMGz8z1ar_4nu-W6kVV_pw&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+#text{
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    font-weight: bolder;
+}
+.downside{
+    margin: 10px;
+    height:400px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left-text{
+    margin: 10px;
+}
+.left-text p{
+    margin: 10px;
+    text-align: center;
+}
+
+.right-side{
+    align-items: center;
+}
+.card{
+    width: 17rem;
+    border: 2px solid black;
+    text-align: center;
+    margin: 50px;
+    background-color: blueviolet;
+    border-radius: 6px;
+    box-shadow: 9px 14px 8px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 9px 14px 8px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 14px 8px 6px rgba(0,0,0,0.75);
+}
+
+@media(min-width: 600px) and (max-width: 1280px){  /* for tablets */
+    .container{
+        grid-template-columns:  30% 70%;
+    }
+    .left-text{
+        overflow: auto; /* Adds a scrollbar if content overflows */
+        /* max-height: 100%; Ensure it doesn’t exceed the box height */
+        box-sizing: border-box;
+    }
+    .left-text{
+        height: auto;
+    }
+    .card{
+        margin:5px auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media(min-width:360px) and (max-width:600px){    /*for phones */
+    .container{
+        grid-template-columns: 30% 70%;
+    }
+    .nav-bar {
+        flex-direction: column; /* Stack nav items vertically */
+        height: auto; /* Allow height to adjust */
+    }
+    .page-options {
+        margin: 10px 0; /* Add margin for spacing */
+    }
+    .left-text{
+        overflow: auto; /* Adds a scrollbar if content overflows */
+        /* max-height: 100%; Ensure it doesn’t exceed the box height */
+        box-sizing: border-box;
+    }
+    .left-text{
+        height: auto;
+        /* margin-bottom: 20px; Add space between left-text and card */
+    }
+    .card {
+        margin: 0 auto; /*Center the card */
+        /* margin-bottom: 20px; Add bottom margin for spacing */
+        width: 100%;  /*Adjust the width to fit mobile screens */
+        /* max-width: 300px; Set a max-width for better display */
+        box-sizing: border-box;
+    }
+    form input {
+        width: calc(100% - 20px); /* Subtract the padding or margins (adjust as necessary) */
+        margin: 10px auto; /* Add margin for better spacing */
+        display: block; /* Ensure the input is centered */
+        padding: 10px; /* Optional: add some padding inside the input */
+        box-sizing: border-box; /* Ensures padding and borders are included in the width */
+    }
+    
+}
